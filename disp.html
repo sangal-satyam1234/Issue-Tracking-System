@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<style>
+
+#tab { display:inline; margin-left: 100px; }
+#panel { background-color:lightgrey ; width:"100%"; height:50px; padding:10px; text-align:left; margin:0; border:0; } 
+
+</style>
+</head>
+
+<body>
+
+<div id="panel">
+
+<form action="http://localhost/view_issue_sort.php" target="frame3" method="post" >
+
+<span id="tab"><select name="group" >
+                     	<option selected="selected" value="no">Choose your Group</option>
+			<option value="PDGM">PDGM</option>
+         	     	<option value="CGG">CGG</option>
+ 		     	<option value="SYSTEM">SYSTEM</option>  </span>
+<span id="tab"><input type="submit" value="Show Only Solved" name="status"></span>
+<span id="tab"><input type="submit" value="Show Only Unsolved" name="status"></span>
+<span id="tab"><input type="submit" value="Show All" name="status"></span>
+<br>
+Issue Duration From : <input type="date" name="datefrom"> 
+<span id="tab">Issue Duration To : <input type="date" name="dateto" > </span>
+<input type="submit" name="status" value="Submit">
+<span id="tab">Search Text: <input type="text" name="text"></span>
+<input type="submit" name="status" value="Issue">
+
+</form>
+
+</div>
+
+
+
+</body>
+</html>

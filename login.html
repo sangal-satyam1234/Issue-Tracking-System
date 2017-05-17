@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+
+<html>
+
+
+<head>
+<style>
+
+ input[type=text]{
+    width:15%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    transition: 0.5s;
+    outline: none;
+}
+
+input:focus {
+    border: 3px solid #555;
+    border: 3px solid #555;
+}
+
+body {margin:50px;10px;padding:10px; text-align:center; background-color:lightgrey;}
+
+</style>
+</head>
+
+
+<body>
+
+<h1>ADMIN PANEL</h1>
+
+<form action="http://localhost/admin.php" name="admin_Page" target="_top"; method="post"  >
+
+ID :<br>
+<input type="text" name="a_name" required> 
+<br>
+Password :<br>
+<input type="password" name="a_pass" required>
+
+<br><br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+
+
+
+</body>
+
+</html>
